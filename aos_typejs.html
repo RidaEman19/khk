@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: rgb(189, 155, 171);
+        }
+
+        .sub-navbar {
+            width: 80vw;
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            align-items: center;
+        }
+
+        .nav-item {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-item li a {
+            padding: 0px 26px;
+            text-decoration: none;
+            font-size: 22px;
+            color: rgb(87, 8, 8);
+        }
+
+        .logo {
+            color: rgb(87, 8, 8);
+        }
+
+        .btn button {
+            background-color: rgb(87, 8, 8);
+            padding: 10px 18px;
+            color: rgb(189, 155, 171);
+            font-size: 22px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .sub-hero {
+            width: 85vw;
+            height: 70vh;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .sub-hero-left {
+            width: 60%;
+        }
+
+        .sub-hero-left img {
+            width: 800px;
+        }
+
+        .sub-hero-right {
+            width: 40%;
+        }
+
+        .sub-hero-right h1 {
+            font-size: 60px;
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            font-style: normal;
+            color: rgb(87, 8, 8);
+        }
+
+        .sub-hero-right p {
+            line-height: 150%;
+            padding: 20px 0px;
+            color: rgb(87, 8, 8);
+        }
+
+        .sub-hero-right button {
+            background-color: rgb(87, 8, 8);
+            padding: 10px 18px;
+            color: rgb(189, 155, 171);
+            font-size: 22px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .cards {
+            width: 85vw;
+            margin: 40px auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            box-shadow: 10px 5px 20px 0px gray;
+            width: 27vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0px;
+        }
+
+        .card .top img {
+            width: 300px;
+        }
+
+        .card .mid h2 {
+            font-size: 35px;
+            font-weight: 600;
+            padding: 0px 10px;
+            text-align: center;
+        }
+
+        .card .mid p {
+            padding: 0px 10px;
+            text-align: center;
+        }
+
+        .card .btm button {
+            margin-top: 20px;
+            text-align: center;
+            background-color: rgb(87, 8, 8);
+            padding: 10px 18px;
+            color: rgb(189, 155, 171);
+            font-size: 22px;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="sub-navbar">
+            <div class="logo">
+                <h1>Sports</h1>
+            </div>
+            <ul class="nav-item">
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="btn">
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <div class="sub-hero">
+            <div class="sub-hero-left">
+                <img src="daraz.png" height="400px" width="300px" alt="">
+            </div>
+            <div class="sub-hero-right">
+                <h1> <span id="aptech"></span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas natus illo odit atque labore,
+                    architecto molestias! Exercitationem inventore architecto dolore quod ipsum!</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards">
+        <div class="card"  data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+            <div class="top">
+                <img src="daraz.png" alt="">
+            </div>
+            <div class="mid">
+                <h2>Rida Eman Asghar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi, dolores illum eius tenetur
+                    minus inventore quas pariatur magnam soluta repellendus ipsa amet repellat eum!</p>
+            </div>
+            <div class="btm">
+                <button>Management</button>
+            </div>
+        </div>
+
+        <div class="card"  data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+            <div class="top">
+                <img src="daraz.png" alt="">
+            </div>
+            <div class="mid">
+                <h2>Rida Eman Asghar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi, dolores illum eius tenetur
+                    minus inventore quas pariatur magnam soluta repellendus ipsa amet repellat eum!</p>
+            </div>
+            <div class="btm">
+                <button>Management</button>
+            </div>
+        </div>
+
+        <div class="card"  data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+            <div class="top">
+                <img src="daraz.png" alt="">
+            </div>
+            <div class="mid">
+                <h2>Rida Eman Asghar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi, dolores illum eius tenetur
+                    minus inventore quas pariatur magnam soluta repellendus ipsa amet repellat eum!</p>
+            </div>
+            <div class="btm">
+                <button>Management</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+<!-- <script>
+      var typed = new Typed('#aptech', {
+      strings: ['Festivals', 'check yours',"lfgfh"],
+      typeSpeed: 50,
+      loop:true,
+      loopCount:Infinity
+    });
+      AOS.init();
+</script> -->
+ 
+
+
+<script>
+      var typed = new Typed('#aptech', {
+      strings: ['oceanGate', 'a wonderfull web','visit it','hello'],
+      typeSpeed: 100,
+      loop:true,
+      loopCount:Infinity
+    });
+    AOS.init();
+  </script>
+</body>
+
+</html>
